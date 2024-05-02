@@ -48,7 +48,7 @@ function readData(){
     }
 }
 readData();
-
+// deleteData
 function deleteData(element){
     let indexToRemove = element;
     tasks.splice(indexToRemove, 1);
