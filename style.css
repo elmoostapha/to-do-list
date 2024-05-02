@@ -1,0 +1,157 @@
+:root{
+    --background: #272343;
+    --main: #ffffff;
+    --second: #e3f6f5;
+    --third: #bae8e8;
+    --last: #29a19c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: var(--background);
+    font-family: "Roboto" , sans-serif;
+    color: var(--main);
+}
+
+.container{
+    min-width: 60%;
+    min-height: 500px;
+    margin-top: 200px;
+    /* padding: 10px 30px; */
+    box-shadow: 0 0px 3px var(--main);
+}
+
+
+.header{
+    background: var(--second);
+    padding: 10px 10px;
+    user-select: none;
+}
+.header h1{
+    text-align: center;
+    color: #000;
+    width: 90%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 0 0px 3px var(--background);
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 20px;
+    color: green;
+}
+
+#add-button:hover{
+    background-color: var(--background);
+    color: var(--second);
+}
+
+/* Content */
+.tasks{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.task{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 6px var(--main);
+    width: 80%;
+    transition: 0.6s;
+}
+.task:hover{
+    transform: scale(1.02);
+}
+
+.task div button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 0 0px 3px var(--background);
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 20px;
+}
+.task div{
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.task h4{
+    width: 80%;
+}
+.task div button{
+    transition: 0.5s;
+    padding: 3px 2px;
+}
+
+#close:hover{
+    background: rgb(189, 66, 66);
+}
+#delete:hover{
+    background: red;
+    color: var(--main);
+}  
+
+#done:hover{
+    background: green;
+    color: var(--main);
+}
+#close:hover{
+    background: rgb(156, 48, 48);
+    color: var(--main);
+}
+#edit:hover{
+    background: blue;
+    color: var(--main);
+}
+
+
+.done{
+    background-color: var(--last);
+}
+
+/* Media screen */
+@media screen and (max-width: 768px) {
+    .container {
+        min-width: 90%;
+    }.task h4{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 501px) and (max-width: 768px) {
+    .container {
+        min-width: 90%; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        min-width: 90%; 
+    }
+}
+
+
+
+/* 14:56 / 21:14 */
